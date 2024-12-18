@@ -1,7 +1,12 @@
 import "./App.css";
+import { Account } from "./pages/account/Account";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Account />
+    </>
+  );
 }
 
 export default App;
