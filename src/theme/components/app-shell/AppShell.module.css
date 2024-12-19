@@ -1,0 +1,8 @@
+.header {
+  height: 88px;
+  padding: var(--mantine-spacing-6) var(--mantine-spacing-11);
+}
+
+.footer {
+  position: static;
+}
