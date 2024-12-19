@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "generate-vars": "tsx ./scripts/genCustomVars.ts"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@mantine/core": "^7.15.1",

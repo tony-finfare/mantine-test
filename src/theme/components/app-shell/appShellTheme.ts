@@ -13,6 +13,7 @@ export const appShellTheme = AppShell.extend({
       );
       return {
         header: clsx(styles.header, userClassnames?.header),
+        main: clsx(styles.main, userClassnames?.main),
         footer: clsx(styles.footer, userClassnames?.footer),
       };
     },

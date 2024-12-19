@@ -3,6 +3,10 @@
   padding: var(--mantine-spacing-6) var(--mantine-spacing-11);
 }
 
+.main {
+  padding-top: 88px;
+}
+
 .footer {
   position: static;
 }
