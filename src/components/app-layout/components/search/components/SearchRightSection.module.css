@@ -1,0 +1,10 @@
+.search-right-section {
+  color: var(--mantine-color-text);
+  display: flex;
+  align-items: center;
+  gap: var(--mantine-spacing-3);
+  padding: var(--mantine-spacing-3) var(--mantine-spacing-5);
+  background: var(--mantine-color-gray-1);
+  border-radius: var(--mantine-radius-md);
+  cursor: pointer;
+}
