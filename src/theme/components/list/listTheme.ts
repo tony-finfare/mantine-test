@@ -5,6 +5,7 @@ import clsx from "clsx";
 export const listTheme = List.extend({
   defaultProps: {
     className: styles.list,
+    listStyleType: "none",
     classNames: (_theme, props) => {
       return { root: clsx(styles.list, props.className) };
     },
