@@ -3,26 +3,21 @@ import {
   AppShell,
   Box,
   Flex,
+  Group,
   Image,
-  Input,
   List,
   ListItem,
   Text,
 } from "@mantine/core";
 import styles from "./AppHeader.module.css";
-import {
-  IconChevronDown,
-  IconCoinBitcoin,
-  IconCoins,
-  IconSquareDashed,
-} from "@tabler/icons-react";
+import { IconChevronDown, IconCoins } from "@tabler/icons-react";
 import { FC } from "react";
 import { Search } from "../search/Search";
 
 export const AppHeader = () => {
   return (
     <AppShell.Header className={styles["app-header"]}>
-      <Flex columnGap="11">
+      <Group gap="var(--mantine-spacing-11)">
         <Image
           src="/src/assets/walmart.svg"
           className={styles["app-header__logo"]}
@@ -40,11 +35,16 @@ export const AppHeader = () => {
             <FakeMenu label="Offers" />
           </ListItem>
         </List>
-      </Flex>
+      </Group>
       <Box>
         <Search />
       </Box>
-      <Flex c="dimmed" justify="flex-end" align="center" columnGap="9">
+      <Group
+        c="dimmed"
+        justify="flex-end"
+        align="center"
+        gap="var(--mantine-spacing-9)"
+      >
         <Anchor size="md" c="dimmed">
           How it works
         </Anchor>
@@ -65,7 +65,7 @@ export const AppHeader = () => {
             $64.75
           </Text>
         </Flex>
-      </Flex>
+      </Group>
     </AppShell.Header>
   );
 };
