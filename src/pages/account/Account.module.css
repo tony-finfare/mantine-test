@@ -1,0 +1,3 @@
+.account-page {
+  padding: calc(var(--mantine-spacing-12) + 88px) 0;
+}
