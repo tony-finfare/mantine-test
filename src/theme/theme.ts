@@ -1,7 +1,6 @@
 import { createTheme, rem } from "@mantine/core";
 import { listTheme } from "./components/list/listTheme";
 import { appShellTheme } from "./components/app-shell/appShellTheme";
-import { containerTheme } from "./components/container/containerTheme";
 
 export const theme = createTheme({
   autoContrast: false,
@@ -32,6 +31,5 @@ export const theme = createTheme({
   components: {
     AppShell: appShellTheme,
     List: listTheme,
-    Container: containerTheme,
   },
 });

@@ -1,6 +1,8 @@
-import { Container } from "@mantine/core";
 import styles from "./Account.module.css";
+import { PageContainer } from "../../components/page-container/PageContainer";
 
 export const AccountPage = () => {
-  return <Container className={styles["account-page"]}>Account</Container>;
+  return (
+    <PageContainer className={styles["account-page"]}>Account</PageContainer>
+  );
 };
