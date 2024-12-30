@@ -1,3 +1,24 @@
 .account-page {
   padding: calc(var(--mantine-spacing-12) + 88px) 0;
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: var(--mantine-spacing-8);
+}
+
+.account-page__header {
+  grid-column: span 2;
+}
+
+button.account-page__settings-button {
+  padding: var(--mantine-spacing-7);
+  border-radius: var(--mantine-radius-lg);
+  border: 1px solid var(--mantine-color-default-border);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400px;
+  height: fit-content;
+}
+
+button.account-page__settings-button span[data-position="left"] {
+  margin-inline-end: var(--mantine-spacing-3);
 }

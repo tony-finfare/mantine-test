@@ -6,16 +6,16 @@ import { getUserClassNames } from "../../theme.helpers";
 export const appShellTheme = AppShell.extend({
   defaultProps: {
     classNames: (them, props) => {
-      const userClassnames = getUserClassNames(
+      const userClassNames = getUserClassNames(
         them,
         appShellTheme.defaultProps,
         props
       );
       return {
-        root: clsx(styles.root, userClassnames?.root),
-        header: clsx(styles.header, userClassnames?.header),
-        main: clsx(styles.main, userClassnames?.main),
-        footer: clsx(styles.footer, userClassnames?.footer),
+        root: clsx(styles.root, userClassNames?.root),
+        header: clsx(styles.header, userClassNames?.header),
+        main: clsx(styles.main, userClassNames?.main),
+        footer: clsx(styles.footer, userClassNames?.footer),
       };
     },
     header: {

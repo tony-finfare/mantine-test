@@ -12,6 +12,10 @@ export const theme = createTheme({
   radius: {
     max: rem(1000),
   },
+  components: {
+    AppShell: appShellTheme,
+    List: listTheme,
+  },
   spacing: {
     0: rem(0),
     1: rem(2),
@@ -27,9 +31,5 @@ export const theme = createTheme({
     11: rem(48),
     12: rem(64),
     13: rem(128),
-  },
-  components: {
-    AppShell: appShellTheme,
-    List: listTheme,
   },
 });

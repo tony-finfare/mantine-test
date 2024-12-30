@@ -1,0 +1,16 @@
+div.balance-card {
+  background-color: var(--mantine-color-blue-filled-hover);
+  border-radius: var(--mantine-radius-xl);
+  padding: var(--mantine-spacing-7);
+  row-gap: var(--mantine-spacing-10);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  color: var(--mantine-color-white);
+}
+
+img.balance-card__illustration {
+  height: 124px;
+  width: auto;
+  object-fit: contain;
+}
