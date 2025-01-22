@@ -4,6 +4,7 @@ import { appShellTheme } from "./components/app-shell/appShellTheme";
 import { buttonTheme } from "./components/button/buttonTheme";
 
 export const theme = createTheme({
+  primaryColor: "blue",
   autoContrast: false,
   focusRing: "auto",
   fontFamily: "Inter, sans-serif",
