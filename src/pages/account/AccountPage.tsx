@@ -3,6 +3,7 @@ import { PageContainer } from "../../components/page-container/PageContainer";
 import { Box, Button, Stack, Title } from "@mantine/core";
 import { BalanceCard } from "./components/balance-card/BalanceCard";
 import { IconUserCircle } from "@tabler/icons-react";
+import { LinkedCards } from "./components/linked-cards/LinkedCards";
 
 export const AccountPage = () => {
   return (
@@ -22,6 +23,7 @@ export const AccountPage = () => {
         >
           Account Settings
         </Button>
+        <LinkedCards />
       </Stack>
     </PageContainer>
   );

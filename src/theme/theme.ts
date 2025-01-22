@@ -1,6 +1,7 @@
-import { createTheme, rem } from "@mantine/core";
+import { createTheme, CSSVariablesResolver, rem } from "@mantine/core";
 import { listTheme } from "./components/list/listTheme";
 import { appShellTheme } from "./components/app-shell/appShellTheme";
+import { buttonTheme } from "./components/button/buttonTheme";
 
 export const theme = createTheme({
   autoContrast: false,
@@ -15,6 +16,7 @@ export const theme = createTheme({
   components: {
     AppShell: appShellTheme,
     List: listTheme,
+    Button: buttonTheme,
   },
   spacing: {
     0: rem(0),
@@ -32,4 +34,31 @@ export const theme = createTheme({
     12: rem(64),
     13: rem(128),
   },
+  other: {
+    padding: {
+      "3xs": rem(4),
+      xxs: rem(8),
+      xs: rem(12),
+      sm: rem(16),
+      md: rem(20),
+      lg: rem(24),
+      xl: rem(32),
+    },
+    contentMaxWidth: rem(1400),
+  },
+});
+
+export const resolver: CSSVariablesResolver = (theme) => ({
+  variables: {
+    "--content-max-width": theme.other.contentMaxWidth,
+    "--mantine-padding-3xs": theme.other.padding["3xs"],
+    "--mantine-padding-xxs": theme.other.padding.xxs,
+    "--mantine-padding-xs": theme.other.padding.xs,
+    "--mantine-padding-sm": theme.other.padding.sm,
+    "--mantine-padding-md": theme.other.padding.md,
+    "--mantine-padding-lg": theme.other.padding.lg,
+    "--mantine-padding-xl": theme.other.padding.xl,
+  },
+  light: {},
+  dark: {},
 });

@@ -1,5 +1,5 @@
-import { Container, ContainerProps } from "@mantine/core";
+import { Container } from "@mantine/core";
 
-export const PageContainer: React.FC<ContainerProps> = (props) => {
-  return <Container size="var(--container-max-width)" {...props} />;
-};
+export const PageContainer = Container.withProps({
+  size: "var(--content-max-width)",
+});
