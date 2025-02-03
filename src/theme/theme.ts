@@ -1,6 +1,4 @@
 import { createTheme, CSSVariablesResolver, rem } from "@mantine/core";
-import { listTheme } from "./components/list/listTheme";
-import { appShellTheme } from "./components/app-shell/appShellTheme";
 import { buttonTheme } from "./components/button/buttonTheme";
 
 export const theme = createTheme({
@@ -15,8 +13,6 @@ export const theme = createTheme({
     max: rem(1000),
   },
   components: {
-    AppShell: appShellTheme,
-    List: listTheme,
     Button: buttonTheme,
   },
   spacing: {

@@ -1,20 +1,10 @@
 import { Button } from "@mantine/core";
-import { AppLayout } from "./components/app-layout/AppLayout";
+
 import { PageContainer } from "./components/page-container/PageContainer";
-import { AccountPage } from "./pages/account/AccountPage";
 
 function App() {
   return (
-    <PageContainer
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100vh",
-        gap: "1rem",
-      }}
-    >
+    <PageContainer>
       <div style={{ display: "flex", gap: "1rem" }}>
         <Button size="lg" variant="filled" color="blue">
           Click Me
@@ -38,11 +28,6 @@ function App() {
         </Button>
       </div>
     </PageContainer>
-  );
-  return (
-    <AppLayout>
-      <AccountPage />
-    </AppLayout>
   );
 }
 
